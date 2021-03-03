@@ -1,0 +1,6 @@
+framework module Pods_LongShop {
+  umbrella header "Pods-LongShop-umbrella.h"
+
+  export *
+  module * { export * }
+}
