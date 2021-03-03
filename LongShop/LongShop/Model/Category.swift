@@ -30,6 +30,30 @@ class Category {
     }
 }
 
+// MARK: Download Categories From Firebase
+func downloadCategoriesFromFirebase(completion: @escaping (_ categoryArray: [Category]) -> Void) {
+    
+    var categoryArray: [Category] = []
+    
+    FirebaseReference(.Category).getDocuments { (snapshot, error) in
+        
+        guard let snapshot = snapshot else {
+            completion(categoryArray)
+            return
+        }
+        
+        
+        if !snapshot.isEmpty {
+            for categoryDict in snapshot.documents {
+//                print("Created new category with")
+                categoryArray.append(Category(_dictionary: categoryDict.data() as NSDictionary))
+            }
+        }
+        
+        completion(categoryArray)
+    }
+}
+
 // MARK: Save category func
 func saveCategoryToFirebase(_ category: Category) {
     
@@ -45,9 +69,9 @@ func categoryDictionaryFrom(_ category: Category) -> NSDictionary {
     return NSDictionary(objects: [category.id,
                                   category.name,
                                   category.imageName,
-    ], forKeys:  [kOBJECTID as NSCopying,
-                  kNAME as NSCopying,
-                  kIMAGENAME as NSCopying
+        ], forKeys:  [kOBJECTID as NSCopying,
+                      kNAME as NSCopying,
+                      kIMAGENAME as NSCopying
     ])
 }
 

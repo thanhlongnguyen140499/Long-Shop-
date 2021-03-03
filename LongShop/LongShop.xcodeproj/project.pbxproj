@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0691595604A0B1DDD8974FD7 /* Pods_LongShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0074750D4FAE37BF1C961402 /* Pods_LongShop.framework */; };
+		742CDE5825F00D98004A4534 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742CDE5725F00D98004A4534 /* ItemsTableViewController.swift */; };
 		74B4E58325EF9F2100FFAEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4E58225EF9F2100FFAEE5 /* AppDelegate.swift */; };
 		74B4E58525EF9F2200FFAEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4E58425EF9F2200FFAEE5 /* SceneDelegate.swift */; };
 		74B4E58A25EF9F2200FFAEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B4E58825EF9F2200FFAEE5 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0074750D4FAE37BF1C961402 /* Pods_LongShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E86C1D94AB0F71F0119E7A9 /* Pods-LongShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongShop.debug.xcconfig"; path = "Target Support Files/Pods-LongShop/Pods-LongShop.debug.xcconfig"; sourceTree = "<group>"; };
+		742CDE5725F00D98004A4534 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		74B4E57F25EF9F2100FFAEE5 /* LongShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B4E58225EF9F2100FFAEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B4E58425EF9F2200FFAEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				74B4E59625EFAE0500FFAEE5 /* CategoryCollectionViewController.swift */,
+				742CDE5725F00D98004A4534 /* ItemsTableViewController.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				74B4E5A525EFC92300FFAEE5 /* Constants.swift in Sources */,
 				74B4E59925EFAEA100FFAEE5 /* CategoryCollectionViewCell.swift in Sources */,
+				742CDE5825F00D98004A4534 /* ItemsTableViewController.swift in Sources */,
 				74B4E58325EF9F2100FFAEE5 /* AppDelegate.swift in Sources */,
 				74B4E59D25EFC33900FFAEE5 /* FirebaseCollectionReference.swift in Sources */,
 				74B4E58525EF9F2200FFAEE5 /* SceneDelegate.swift in Sources */,
